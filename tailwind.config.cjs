@@ -27,6 +27,9 @@ module.exports = {
       'purple-700': '#8727ff',
     },
     extend: {
+      backgroundImage: {
+        'igniteLab': "url('../assets/ignite-lab.png')"
+      },
       fontFamily: {
         sans: 'Inter, sans-serif'
       },

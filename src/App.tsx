@@ -11,65 +11,67 @@ import './styles/global.css'
 export function App() {
   return ( 
     <div className='w-screen h-screen bg-gray-900 flex items-center justify-center text-gray-100 flex-col'>
-      <header className='flex flex-col items-center'>
-        <Logo />
+      <div className='w-[998px] h-[696px] grid grid-cols-2 bg-igniteLab bg-no-repeat'>
+        <header className='flex flex-col items-center mt-6 ml-14'>
+          <Logo />
 
-        <Heading size='lg' className='mt-4'>
-          Ignite Lab
-        </Heading>
+          <Heading size='lg' className='mt-2'>
+            Ignite Lab
+          </Heading>
 
-        <Text size='lg' className='text-gray-400 mt-1'>
-          Faça login e comece a usar!
-        </Text>
-      </header>
-
-      <form className='flex flex-col gap-4 items-stretch w-full max-w-sm mt-10'>
-        <label htmlFor="email" className='flex flex-col gap-3'>
-          <Text className='font-semibold'>Endereço de e-mail</Text>
-          <TextInput.Root>
-            <TextInput.Icon>
-              <Envelope />
-            </TextInput.Icon>
-
-            <TextInput.Input type='email' id='email' placeholder='Digite seu e-mail' />
-
-            
-          </TextInput.Root>
-        </label>
-
-        <label htmlFor="password" className='flex flex-col gap-3'>
-          <Text className='font-semibold'>Sua senha</Text>
-          <TextInput.Root>
-            <TextInput.Icon>
-              <Lock />
-            </TextInput.Icon>
-
-            <TextInput.Input type='password' id='password' placeholder='*******' />
-
-            
-          </TextInput.Root>
-        </label>
-
-        <label htmlFor="remember" className='flex items-center gap-2'>
-          <Checkbox id='remember'/>
-          <Text size='sm' className='text-gray-200'>
-            Lembrar de mim por 30 dias
+          <Text size='lg' className='text-gray-400 mt-1'>
+            Faça login e comece a usar!
           </Text>
-        </label>
+        </header>
 
-        <Button type='submit' className='mt-4'>Entrar na plataforma </Button>
+        <form className='col-start-1 ml-20 flex flex-col gap-4 items-stretch w-full max-w-[400px]'>
+          <label htmlFor="email" className='flex flex-col gap-3'>
+            <Text className='font-semibold'>Endereço de e-mail</Text>
+            <TextInput.Root>
+              <TextInput.Icon>
+                <Envelope />
+              </TextInput.Icon>
 
-      </form>
+              <TextInput.Input type='email' id='email' placeholder='Digite seu e-mail' />
 
-      <footer className='flex flex-col items-center gap-4 mt-8'>
-        <Text asChild size='sm'>
-          <a href="" className='text-gray-400 underline hover:text-gray-200'>Esqueceu sua senha?</a>
-        </Text>
+              
+            </TextInput.Root>
+          </label>
 
-        <Text asChild size='sm'>
-          <a href="" className='text-gray-400 underline hover:text-gray-200'>Não possui conta? Crie uma agora!</a>
-        </Text>
-      </footer>
+          <label htmlFor="password" className='flex flex-col gap-3'>
+            <Text className='font-semibold'>Sua senha</Text>
+            <TextInput.Root>
+              <TextInput.Icon>
+                <Lock />
+              </TextInput.Icon>
+
+              <TextInput.Input type='password' id='password' placeholder='*******' />
+
+              
+            </TextInput.Root>
+          </label>
+
+          <label htmlFor="remember" className='flex items-center gap-2'>
+            <Checkbox id='remember'/>
+            <Text size='sm' className='text-gray-200'>
+              Lembrar de mim por 30 dias
+            </Text>
+          </label>
+
+          <Button type='submit' className='mt-4'>Entrar na plataforma </Button>
+
+        </form>
+
+        <footer className='flex flex-col col-start-1 items-center justify-center gap-4 mb-12 ml-14'>
+          <Text asChild size='sm'>
+            <a href="" className='text-gray-400 underline hover:text-gray-200'>Esqueceu sua senha?</a>
+          </Text>
+
+          <Text asChild size='sm'>
+            <a href="" className='text-gray-400 underline hover:text-gray-200'>Não possui conta? Crie uma agora!</a>
+          </Text>
+        </footer>
+      </div>
     </div>
   )
 }
