@@ -10,9 +10,9 @@ import './styles/global.css'
 
 export function App() {
   return ( 
-    <div className='w-screen h-screen bg-gray-900 flex items-center justify-center text-gray-100 flex-col'>
-      <div className='w-[998px] h-[696px] grid grid-cols-2 bg-igniteLab bg-no-repeat'>
-        <header className='flex flex-col items-center mt-6 ml-14'>
+    <div className='w-screen h-screen bg-blue-900 flex items-center justify-center text-gray-100 flex-col'>
+      <div className='w-[998px] h-[696px] grid grid-cols-2 bg-igniteLab bg-no-repeat rounded-lg'>
+        <header className='flex flex-col items-center mt-6 ml-14 mb-5'>
           <Logo />
 
           <Heading size='lg' className='mt-2'>
