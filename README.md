@@ -1,6 +1,6 @@
 # ignite-lab-design-system
 Projeto desenvolvido durante o Ignite Lab 03 <br>
-Design system para projeto em ReactJs
+Design system de formul para projeto em ReactJs
 
 ## Screenshot
 
